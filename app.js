@@ -26,8 +26,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Set up Cognito pool
 const poolData = {
-    UserPoolId: process.env.COGNITO_USER_POOL_ID,
-    ClientId: process.env.COGNITO_CLIENT_ID
+    UserPoolId: 'ap-southeast-2_Up85TT9kx',
+    ClientId: '3jlv0og5l1mkjnq1tdb7bg3ini'
 };
 const userPool = new CognitoUserPool(poolData);
 
